@@ -15,17 +15,13 @@ public class ex {
                 } else {
                     return "không giao nhau";
                 }
-            }
-            if(r3<d && d<r4){
+            }else if(r3<d && d<r4){
                 return "giao nhau";
-            }
-            if(r3==d || d==r4) {
+            } else if(r3==d || d==r4) {
                 return "tiếp xúc";
-            }
-            if(d>r4) {
+            }else { // d>r4
                 return "không giao nhau";
             }
         }
-        return null;
     }
 }
